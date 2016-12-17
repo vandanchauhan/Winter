@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Results Page</title>
+  <!-- <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'> -->
+  <script src="https://use.fontawesome.com/1a15fedbf7.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/results.css">
+
+  <!-- Source file for graph -->
+  <script src="js/canvasjs.min.js"></script>
+    <script type="text/javascript">
+    window.onload = function () {
+      var chart = new CanvasJS.Chart("chartContainer", {
+        // title: {
+        //   text: ""
+        // },
+        data: [{
+          type: "column",
+          dataPoints: [
+            { x: 10, y: 75 },
+            { x: 20, y: 71 },
+            { x: 30, y: 32 },
+          ]
+        }, {
+          type: "column",
+          dataPoints: [
+            { x: 10, y: 25 },
+            { x: 20, y: 41 },
+            { x: 30, y: 9 },
+          ]
+        }, {
+          type: "column",
+          dataPoints: [
+            { x: 10, y: 40 },
+            { x: 20, y: 91 },
+            { x: 30, y: 52 },
+          ]
+        }]
+      });
+      chart.render();
+    }
+  </script>
+
+</head>
+<body>
+  <div class="analysis-top-bar">
+    <div class="left-box">
+        <a href="Index.html" class="btn">
+            <i class="tb-icon fa fa-arrow-left" aria-hidden="true"></i>
+        </a>
+        <div class="test-details">
+            <h4 class="text-ellipsis">My Tests</h4>
+            <h5 class="text-ellipsis ng-binding">Live Test 1</h5>
+        </div>
+    </div>
+    <div class="right-box">
+        <a href="/rbi/tests/584aad4c03282110c26111b7#/solutions" class="btn btn-block text-uppercase">Solutions</a>
+    </div>
+  </div>
+  <div class="container-fluid test-analysis-container">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="ana-right-box">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="panel panel-default analysis-quick-status">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Quick Status</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="media quick-status-each qs-rank">
+                                    <div class="media-left">
+                                        <div class="media-object"></div>
+                                    </div>
+                                    <div class="media-body media-middle number-text">
+                                        <h3 class="media-heading font-normal mar-b0 ng-binding">
+                                            3281<span class="ng-binding">/3814</span>
+                                        </h3>
+                                        <p class="mar-b0">RANK</p>
+                                    </div>
+                                </div>
+                                <div class="media quick-status-each qs-score">
+                                    <div class="media-left">
+                                        <div class="media-object"></div>
+                                    </div>
+                                    <div class="media-body media-middle number-text">
+                                        <h3 class="media-heading font-normal mar-b0 ng-binding">
+                                            0<span class="ng-binding">/100</span>
+                                        </h3>
+                                        <p class="mar-b0">SCORE</p>
+                                    </div>
+                                </div>
+                                <div class="media quick-status-each qs-percentile">
+                                    <div class="media-left">
+                                        <div class="media-object"></div>
+                                    </div>
+                                    <div class="media-body media-middle number-text">
+                                        <h3 class="media-heading font-normal mar-b0 ng-binding">
+                                            14<span>%</span>
+                                        </h3>
+                                        <p class="mar-b0">PERCENTILE</p>
+                                    </div>
+                                </div>
+                                <div class="media quick-status-each qs-accuracy">
+                                    <div class="media-left">
+                                        <div class="media-object"></div>
+                                    </div>
+                                    <div class="media-body media-middle number-text">
+                                        <h3 class="media-heading font-normal mar-b0 ng-binding">
+                                            0<span>%</span>
+                                        </h3>
+                                        <p class="mar-b0">ACCURACY</p>
+                                    </div>
+                                </div>
+                                <div class="media quick-status-each qs-attempt">
+                                    <div class="media-left">
+                                        <div class="media-object"></div>
+                                    </div>
+                                    <div class="media-body media-middle number-text">
+                                        <h3 class="media-heading font-normal mar-b0 ng-binding">
+                                            0<span class="ng-binding">/100</span>
+                                        </h3>
+                                        <p class="mar-b0">ATTEMPT</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6 mar-t16 pad-v16 text-center number-text" style="border-right: 1px solid #e1e8ed;">
+                                        <h3 class="font-normal mar-v0 ng-binding">76</h3>
+                                        <p class="mar-b0">BEST SCORE</p>
+                                    </div>
+                                    <div class="col-xs-6 mar-t16 pad-v16 text-center number-text">
+                                            <h3 class="font-normal mar-v0 ng-binding">31.31</h3>
+                                        <p class="mar-b0">AVG SCORE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-9">  
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Sectional Summary</h3>
+                            </div>
+                            <div class="panel-body pad-0">
+                                <div class="table-responsive border-none mar-b0">
+                                    <table class="table table-bordered mar-b0 analysis-table sectional-summary-table">
+                                        <thead>
+                                        <tr>
+                                            <th>Section Name</th>
+                                            <th>Score</th>
+                                            <th>Attempted</th>
+                                            <th>Accuracy</th>
+                                            <!-- ngIf: isTimeDisplay --><th ng-if="isTimeDisplay" class="ng-scope">Time</th><!-- end ngIf: isTimeDisplay -->
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        <!-- ngRepeat: section in myAnalysis | orderBy : 'order' --><!-- ngIf: !(myAnalysis.length <= 2 && section.title == 'Overall') --><tr ng-repeat="section in myAnalysis | orderBy : 'order' " ng-if="!(myAnalysis.length <= 2 &amp;&amp; section.title == 'Overall')" class="ng-scope">
+                                            <td><div class="value ng-binding">English Language</div></td>
+                                            <td>
+                                                <div class="percentage-complete purple" style="width: 0%"></div>
+                                                <div class="value ng-binding">
+                                                    0<span class="ng-binding">/30</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="percentage-complete blue" style="width: 0%"></div>
+                                                <div class="value ng-binding">
+                                                    0<span class="ng-binding">/30</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="percentage-complete green" style="width: 0%"></div>
+                                                <div class="value ng-binding">0<span>%</span></div>
+                                            </td>
+                                            <!-- ngIf: isTimeDisplay --><td ng-if="isTimeDisplay" class="ng-scope">
+                                                <div class="percentage-complete yellow" style="width: 0%"></div>
+                                                <div class="value ng-binding">
+                                                    00:00<span class="ng-binding">/60min</span>
+                                                </div>
+                                            </td><!-- end ngIf: isTimeDisplay -->
+                                        </tr><!-- end ngIf: !(myAnalysis.length <= 2 && section.title == 'Overall') --><!-- end ngRepeat: section in myAnalysis | orderBy : 'order' --><!-- ngIf: !(myAnalysis.length <= 2 && section.title == 'Overall') --><tr ng-repeat="section in myAnalysis | orderBy : 'order' " ng-if="!(myAnalysis.length <= 2 &amp;&amp; section.title == 'Overall')" class="ng-scope">
+                                            <td><div class="value ng-binding">Numerical Ability</div></td>
+                                            <td>
+                                                <div class="percentage-complete purple" style="width: 0%"></div>
+                                                <div class="value ng-binding">
+                                                    0<span class="ng-binding">/35</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="percentage-complete blue" style="width: 0%"></div>
+                                                <div class="value ng-binding">
+                                                    0<span class="ng-binding">/35</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="percentage-complete green" style="width: 0%"></div>
+                                                <div class="value ng-binding">0<span>%</span></div>
+                                            </td>
+                                            <!-- ngIf: isTimeDisplay --><td ng-if="isTimeDisplay" class="ng-scope">
+                                                <div class="percentage-complete yellow" style="width: 0%"></div>
+                                                <div class="value ng-binding">
+                                                    00:00<span class="ng-binding">/60min</span>
+                                                </div>
+                                            </td><!-- end ngIf: isTimeDisplay -->
+                                        </tr><!-- end ngIf: !(myAnalysis.length <= 2 && section.title == 'Overall') --><!-- end ngRepeat: section in myAnalysis | orderBy : 'order' --><!-- ngIf: !(myAnalysis.length <= 2 && section.title == 'Overall') --><tr ng-repeat="section in myAnalysis | orderBy : 'order' " ng-if="!(myAnalysis.length <= 2 &amp;&amp; section.title == 'Overall')" class="ng-scope">
+                                            <td><div class="value ng-binding">Reasoning Ability</div></td>
+                                            <td>
+                                                <div class="percentage-complete purple" style="width: 0%"></div>
+                                                <div class="value ng-binding">
+                                                    0<span class="ng-binding">/35</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="percentage-complete blue" style="width: 0%"></div>
+                                                <div class="value ng-binding">
+                                                    0<span class="ng-binding">/35</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="percentage-complete green" style="width: 0%"></div>
+                                                <div class="value ng-binding">0<span>%</span></div>
+                                            </td>
+                                            <!-- ngIf: isTimeDisplay --><td ng-if="isTimeDisplay" class="ng-scope">
+                                                <div class="percentage-complete yellow" style="width: 0%"></div>
+                                                <div class="value ng-binding">
+                                                    00:00<span class="ng-binding">/60min</span>
+                                                </div>
+                                            </td><!-- end ngIf: isTimeDisplay -->
+                                        </tr><!-- end ngIf: !(myAnalysis.length <= 2 && section.title == 'Overall') --><!-- end ngRepeat: section in myAnalysis | orderBy : 'order' --><!-- ngIf: !(myAnalysis.length <= 2 && section.title == 'Overall') --><tr ng-repeat="section in myAnalysis | orderBy : 'order' " ng-if="!(myAnalysis.length <= 2 &amp;&amp; section.title == 'Overall')" class="ng-scope">
+                                            <td><div class="value ng-binding">Overall</div></td>
+                                            <td>
+                                                <div class="percentage-complete purple" style="width: 0%"></div>
+                                                <div class="value ng-binding">
+                                                    0<span class="ng-binding">/100</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="percentage-complete blue" style="width: 0%"></div>
+                                                <div class="value ng-binding">
+                                                    0<span class="ng-binding">/100</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="percentage-complete green" style="width: 0%"></div>
+                                                <div class="value ng-binding">0<span>%</span></div>
+                                            </td>
+                                            <!-- ngIf: isTimeDisplay --><td ng-if="isTimeDisplay" class="ng-scope">
+                                                <div class="percentage-complete yellow" style="width: 0%"></div>
+                                                <div class="value ng-binding">
+                                                    00:00<span class="ng-binding">/60min</span>
+                                                </div>
+                                            </td><!-- end ngIf: isTimeDisplay -->
+                                        </tr><!-- end ngIf: !(myAnalysis.length <= 2 && section.title == 'Overall') --><!-- end ngRepeat: section in myAnalysis | orderBy : 'order' -->
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top:35px;" class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Question Distribution</h3>
+                            </div>
+                            <div class="panel-body pad-0">
+                              <div id="chartContainer" style="height: 400px; width: 100%; margin-top:35px;"></div>
+                            </div>
+                        </div>      
+
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>          
+
+</body>
+</html>
+

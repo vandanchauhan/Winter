@@ -1,0 +1,166 @@
+.online_test_bottom_strip {
+	position: absolute;
+    bottom: 0px;
+    background: #eee;
+    height: 50px;
+    width: 100%;
+    border-top: 0px solid #ddd;
+}
+
+.qtn:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.text-red {
+    color:red;
+}
+
+.padding {
+	padding: 10px 5px;
+}
+.margin-10 {
+	margin:10px;
+}
+
+.test_question_btns {
+	padding-left: 0px;
+    list-style-type: none;
+    margin-top:10px;
+}
+
+.test_icons.lg {
+	width: 32px;
+    height: 32px;
+    padding-top: 6px;
+    background: #ddd;
+    border: 1px solid transparent;
+    color: #333;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    display: inline-block;
+    float: left;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-bottom: 12px;
+}
+
+.test_icons:hover {
+	box-shadow: 0px 0px 5px 1px #31B0D5;
+}
+
+.active {
+	box-shadow: 0px 0px 5px 1px #31B0D5;
+}
+
+.border-color {
+    border: 1px solid #1BA9F9;
+    background: #fff;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+.test_actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 185px;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    font-size: 12.5px;
+    background: #F5F8FA;
+    font-size: 12px !important;
+    box-sizing: border-box;
+}
+
+.test_icons.answered {
+    background: #55BBEA;
+    background: #5cb85c;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.test_icons {
+    padding-top: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid transparent;
+    background: #eee;
+    border: 1px solid #eee;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.test_icons.skipped {
+    background: #D9534F;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.test_icons.marked {
+    background: #9B59B6;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.test_icons.unseen {
+    background: #ddd;
+    border: 1px solid #ddd;
+}
+
+ .test_icons.marked.answered {
+    background: #5cb85c;
+    border: 4px solid #9B59B6;
+    color: #fff;
+    padding-top: 3px;
+}
+
+.btn.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-lg{
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+/* Submit Modal */
+
+.table>tbody>tr>th {
+    vertical-align: middle;
+}
+
+.summary_table .test_icons {
+    width: 18px;
+    height: 18px;
+}
+
